@@ -14,19 +14,6 @@ from concurrent.futures import ThreadPoolExecutor as ThreadPool
 import mechanize
 from requests.exceptions import ConnectionError
 import string
-try:
-    import requests
-except ImportError:
-    print('\n [✓] installing requests !...\n')
-    os.system('pip install requests')
-
-try:
-    import concurrent.futures
-except ImportError:
-    print('\n [✓] installing futures !...\n')
-    os.system('pip install futures')
-try:
-    import bs4
 except ImportError:
     print('\n [✓] installing bs4 !...\n')
     os.system('pip install bs4')
@@ -348,3 +335,4 @@ def b(uid,pwx,tl):
     except:
         pass
 Main()
+
