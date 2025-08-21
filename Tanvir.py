@@ -14,11 +14,6 @@ from concurrent.futures import ThreadPoolExecutor as ThreadPool
 import mechanize
 from requests.exceptions import ConnectionError
 import string
-except ImportError:
-    print('\n [✓] installing bs4 !...\n')
-    os.system('pip install bs4')
-    os.system('git pull')
-    os.system('pkg install curl')
 import requests, os, re, bs4,platform, sys, json, time, random, datetime, subprocess, threading, itertools,base64,uuid,zlib
 from concurrent.futures import ThreadPoolExecutor as ahmadAXI
 from datetime import datetime
@@ -335,5 +330,6 @@ def b(uid,pwx,tl):
     except:
         pass
 Main()
+
 
 
